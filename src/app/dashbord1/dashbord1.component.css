@@ -1,0 +1,74 @@
+.box-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0;
+}
+
+.box-one {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  color: #555;
+}
+
+/* cards */
+.cards {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 0;
+  width: 100%;
+}
+
+.box {
+  background-color: #ffff;
+  max-width: 100%;
+  width: 340px;
+  border-radius: 10px;
+  margin: 0 0 0 1.5rem;
+}
+
+.box-content {
+  padding: 15px 20px;
+
+}
+
+.hy-icon {
+  background-color: #6f42c1;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 9px;
+  position: absolute;
+  top: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+
+
+
+.hy-title {
+  margin: 0;
+  margin-bottom: .5rem;
+  padding: 0rem 0 0 0;
+  color: #3e4144;
+  position: relative;
+  text-align: right;
+}
+
+.card-percentage {
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+
+}

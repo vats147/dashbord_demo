@@ -1,0 +1,41 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.navbar {
+  display: block;
+  box-shadow: 0 4px 24px #232a301a;
+
+
+}
+
+.menu {
+  padding: 0px;
+  box-sizing: border-box;
+  width: 20rem;
+}
+
+.menu-header {
+  background-color: #7366FF;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.menu-title {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .romit{
+background-color: rgb(179, 124, 52);
+width: 20rem ;
+padding: 0px;
+margin: 0px;
+} */
