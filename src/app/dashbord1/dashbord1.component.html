@@ -23,11 +23,11 @@
     <div class="box">
       <div class="box-a">
         <div class="box-content">
-          <mat-icon class="hy-icon">shopping_cart</mat-icon>
+          <mat-icon class="hy-icon" style="background-color: #6f42c1;">shopping_cart</mat-icon>
           <h3 class="hy-title">Total Sales</h3>
           <h2 class="hy-title">258</h2>
           <div class="card-percentage">
-            <mat-icon style="color: red;  margin: 0.6rem 0.4rem 0 0;">trending_down</mat-icon>
+            <mat-icon style="color: red;">trending_down</mat-icon>
             <p><span style="color: red;">10% </span> Decrease
             </p>
           </div>
@@ -37,11 +37,11 @@
     <div class="box">
       <div class="box-a">
         <div class="box-content">
-          <mat-icon class="hy-icon">people</mat-icon>
+          <mat-icon class="hy-icon" style="background-color: #fd7e14;">people</mat-icon>
           <h3 class="hy-title">Total Sales</h3>
           <h2 class="hy-title">258</h2>
           <div class="card-percentage">
-            <mat-icon style="color: rgb(32, 190, 0);  margin: 0.6rem 0.4rem 0 0;">trending_up</mat-icon>
+            <mat-icon style="color: rgb(32, 190, 0);  ">trending_up</mat-icon>
             <p><span style="color: rgb(0, 165, 8);">10% </span> Decrease
             </p>
           </div>
@@ -51,11 +51,11 @@
     <div class="box">
       <div class="box-a">
         <div class="box-content">
-          <mat-icon class="hy-icon">local_activity</mat-icon>
+          <mat-icon class="hy-icon" style="background-color: #4caf50;">local_activity</mat-icon>
           <h3 class="hy-title">Total Sales</h3>
           <h2 class="hy-title">258</h2>
           <div class="card-percentage">
-            <mat-icon style="color: red;  margin: 0.6rem 0.4rem 0 0;">trending_down</mat-icon>
+            <mat-icon style="color: red; ">trending_down</mat-icon>
             <p><span style="color: red;">10% </span> Decrease
             </p>
           </div>
@@ -65,11 +65,11 @@
     <div class="box">
       <div class="box-a">
         <div class="box-content">
-          <mat-icon class="hy-icon">attach_money</mat-icon>
+          <mat-icon class="hy-icon" style="background-color: #2196f3;">attach_money</mat-icon>
           <h3 class="hy-title">Total Sales</h3>
           <h2 class="hy-title">258</h2>
           <div class="card-percentage">
-            <mat-icon style="color: rgb(3, 163, 3);  margin: 0.6rem 0.4rem 0 0;">trending_up</mat-icon>
+            <mat-icon style="color: rgb(3, 163, 3); ">trending_up</mat-icon>
             <p><span style="color: rgb(27, 163, 0);">10% </span> Decrease
             </p>
           </div>
@@ -77,4 +77,86 @@
       </div>
     </div>
   </div>
+  <div class="row3">
+    <div class="earning-chart">
+      <div class="header">
+        <h3 class="earn-title">Earning Chart</h3>
+        <!-- <hr class="line"> -->
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="main-chart">
+        <div class="chart-body">
+          <ul>
+            <li>
+              <p>ar</p>
+              <h4>$675</h4>
+              <p class="chart-earning">Weekly Earnings</p>
+            </li>
+            <li>
+              <p>ar</p>
+              <h4>$1.555</h4>
+              <p class="chart-earning">Weekly Earnings</p>
+            </li>
+            <li>
+              <p>ar</p>
+              <h4>$22,625</h4>
+              <p class="chart-earning">Weekly Earnings</p>
+            </li>
+          </ul>
+        </div>
+        <div class="chart">
+          <canvas id="myChart">
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <div class="transaction">
+      <div class="header-transaction">
+        <h2>Transactions</h2>
+      </div>
+      <div class="body-transaction">
+        <!-- <ng-scrollbar class="virtual-scroll" thumbClass="white-scrollbars">
+          <cdk-virtual-scroll-viewport scrollViewport class="example-viewport">
+
+          </cdk-virtual-scroll-viewport>
+        </ng-scrollbar> -->
+        <div class="transaction-add">
+          <ul>
+            <li>
+              <div class="box-icon">
+                <mat-icon class="material-icons-a">account_balance</mat-icon>
+              </div>
+              <div class="xyz">
+                <div class="a">
+                  <small>Bank Tranferr</small>
+                  <h4>Send Money</h4>
+                </div>
+                <div class="b">
+                  <h4>100.65</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- cgart -->

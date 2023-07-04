@@ -12,8 +12,9 @@ import { SlidebarComponent } from './slidebar/slidebar.component';
 import { NgIf } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { Dashbord1Component } from './dashbord1/dashbord1.component';
-
-
+import { AllAPIChartService } from './service/all-apichart.service';
+import { NgScrollbarModule } from 'ngx-scrollbar';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +31,11 @@ import { Dashbord1Component } from './dashbord1/dashbord1.component';
     MatButtonModule,
     MatMenuModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    HttpClientModule,
+    NgScrollbarModule
   ],
-  providers: [],
+  providers: [AllAPIChartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,8 +9,11 @@
 .navbar {
   display: block;
   box-shadow: 0 4px 24px #232a301a;
+}
 
-
+.nav {
+  /* position: fixed; */
+  /* z-index: 999; */
 }
 
 .menu {
@@ -39,3 +42,7 @@ width: 20rem ;
 padding: 0px;
 margin: 0px;
 } */
+
+.icon {
+  font-size: 25px;
+}
