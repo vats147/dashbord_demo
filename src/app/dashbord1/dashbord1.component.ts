@@ -14,27 +14,36 @@ export class Dashbord1Component implements OnInit {
   constructor(private AllAPIChartService: AllAPIChartService) { }
 
   public chart: any;
-  allData: any;
+  allData: any = [];
+  aPrice: any = [];
 
   ngOnInit(): void {
     this.fetchCart()
-    this.renderData()
+    // this.renderData(this.aPrice);
   }
 
-
+  //product api call
   private fetchCart() {
     this.AllAPIChartService.carts().subscribe((data) => {
       this.allData = data;
       if (this.allData != null) {
-        this.allData.map((a: any) => {
-          console.log(a);
-        })
+        // this.allData.map((a: any) => {
+        //   this.aPrice.Push(a.price);
+        // })
+
+        for (let i = 0; i < this.allData.length; i++) {
+          this.aPrice.push(this.allData[i].price)
+        }
       }
     })
+
+    this.renderData(this.aPrice)
   }
 
-  renderData() {
 
+  // chartJS
+  renderData(aPrice: any) {
+    console.log(this.aPrice)
     this.chart = new Chart("myChart", {
       type: 'line', //this denotes tha type of chart
 
@@ -53,15 +62,13 @@ export class Dashbord1Component implements OnInit {
           'December'],
         datasets: [
           {
-            label: "Sales",
-            data: ['10', '20', '30', '40', '50',
-              '80', '70', '60', '50', '80', '10', '55'],
+            label: "Price",
+            data: aPrice,
             backgroundColor: 'blue'
           },
           {
             label: "Profit",
-            data: ['100', '50', '80', '10', '90',
-              '14', '24', '65', '21', '25', '45', '100'],
+            data: aPrice,
             backgroundColor: 'limegreen'
           }
         ]
@@ -73,5 +80,10 @@ export class Dashbord1Component implements OnInit {
     });
   }
 
+
+  //chartjs
+  renderSecondChart() {
+
+  }
 
 }

@@ -226,7 +226,32 @@ p {
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+
+}
+
+::-webkit-scrollbar-track {
+  color: transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  transition: all .3s ease-in-out;
+  visibility: hidden;
+  background: rgb(204, 200, 200);
+  border-radius: 10px;
+  height: 250px;
+}
+
+.transaction:hover ::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
 
 ul {
   margin: 0;
@@ -283,4 +308,48 @@ ul {
 .b {
   display: flex;
   align-items: center;
+}
+
+
+/* row4 */
+.row4 {
+  display: flex;
+  flex-direction: wrap;
+  margin-top: 2rem;
+}
+
+.bill {
+  position: relative;
+  width: 33%;
+  border-radius: 10px;
+  background-color: #ffff;
+}
+
+.card-bill {
+  padding: 1rem;
+}
+
+.avg h4 {
+  color: #787b80;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.avg h3 {
+  color: #222222;
+  font-size: 1.25rem;
+  font-weight: 500;
+
+}
+
+.avg span {
+  font-size: .9rem;
+}
+
+.bill-chart{
+  padding: 1rem;
+
+}
+.bill-chart-style{
+  height: 380px;
 }
