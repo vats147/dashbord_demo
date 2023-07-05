@@ -15,6 +15,7 @@ import { Dashbord1Component } from './dashbord1/dashbord1.component';
 import { AllAPIChartService } from './service/all-apichart.service';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     MatMenuModule,
     MatSidenavModule,
     HttpClientModule,
-    NgScrollbarModule
+    NgScrollbarModule,
+    MatTableModule
   ],
   providers: [AllAPIChartService],
   bootstrap: [AppComponent]
