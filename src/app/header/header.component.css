@@ -9,11 +9,15 @@
 .navbar {
   display: block;
   box-shadow: 0 4px 24px #232a301a;
+ border: 5px;
 }
 
 .nav {
   /* position: fixed; */
   /* z-index: 999; */
+  border-radius: 3px;
+
+  box-shadow: 0 4px 24px #232a301a;
 }
 
 .menu {
@@ -44,5 +48,6 @@ margin: 0px;
 } */
 
 .icon {
+
   font-size: 25px;
 }

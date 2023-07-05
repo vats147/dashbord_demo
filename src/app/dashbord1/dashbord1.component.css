@@ -17,7 +17,7 @@ p {
   flex-wrap: wrap;
   align-content: flex-end;
   justify-content: space-between;
-
+  padding-bottom: 1rem;
 }
 
 .page-title {
@@ -30,15 +30,25 @@ p {
 
 .box-one {
   display: flex;
+  align-items: baseline;
 }
 
-ul {
+.box-one li {
+  margin: 0;
+  padding: 0;
+}
+
+.box-one ul {
   display: flex;
   color: #555;
 }
 
 .application {
   background-color: aquamarine;
+}
+
+.a {
+  margin-bottom: 10px;
 }
 
 /* cards */
@@ -71,7 +81,7 @@ ul {
   padding: 0.8rem;
   border-radius: 9px;
   position: absolute;
-  top: 175px;
+  top: 190px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +89,7 @@ ul {
 }
 
 .box:hover .hy-icon {
-  top: 165px;
+  top: 180px;
   background-color: rgb(27, 18, 18);
 }
 
@@ -158,6 +168,11 @@ ul {
   padding-bottom: 1rem;
 }
 
+.chart-body ul {
+  display: flex;
+  color: #555;
+}
+
 .chart-body h4 {
   font-size: 22px;
   font-weight: 500;
@@ -180,7 +195,7 @@ ul {
 
 /* transaction */
 .transaction {
-  width: 40%;
+  width: 32%;
   background: #fff;
   min-height: 50px;
   position: relative;
@@ -206,6 +221,13 @@ ul {
   font-weight: 500;
 }
 
+.body-transaction {
+  height: 350px;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -220,20 +242,25 @@ ul {
   /* font-size:30px; */
   display: flex;
   list-style: none;
-
+  margin-bottom: 2rem;
 }
 
-.box-icon{
-  background-color: #f7a841;
+.box-icon {
+  background-color: #e1fbe2;
 }
 
-.material-icons-a{
-font-size: 35px;
+.material-icons-a {
+  font-size: 30px;
+  width: 30px;
+  padding: 2px;
+  color: #4caf50;
+
 }
 
 .xyz {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .box-icon {
@@ -241,4 +268,19 @@ font-size: 35px;
   line-height: 1;
   padding: 8px;
   border-radius: 5px;
+}
+
+.xyz h4 {
+  margin: 0px;
+  /* line-height: 1.2; */
+}
+
+.a {
+  margin: 0;
+  padding-left: 7px;
+}
+
+.b {
+  display: flex;
+  align-items: center;
 }
