@@ -21,7 +21,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CdkDragDrop, CdkDropList, CdkDrag, moveItemInArray } from '@angular/cdk/drag-drop';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { ProjectTableComponent } from './project-table/project-table.component';
+
 
 
 @NgModule({
@@ -30,8 +30,6 @@ import { ProjectTableComponent } from './project-table/project-table.component';
     HeaderComponent,
     SlidebarComponent,
     Dashbord1Component,
-    ProjectTableComponent,
-
   ],
   imports: [
     BrowserModule,

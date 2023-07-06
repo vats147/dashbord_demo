@@ -13,6 +13,20 @@ export interface PeriodicElement {
 }
 
 
+// export interface PeriodicElement2 {
+//   projectName: string,
+//   employeesTeam: string,
+//   teamLeader: string,
+//   priority: string,
+//   openTask: string,
+//   complatedTask: string,
+//   status: number,
+//   document: string,
+//   action: string
+
+// }
+
+
 const ELEMENT_DATA: PeriodicElement[] = [
   { position: 1234, name: 'Hydrogen', weight: 1.0079, symbol: 'Paid', total: 5500 },
   { position: 1234, name: 'Helium', weight: 4.0026, symbol: 'unPaid', total: 5500 },
@@ -27,16 +41,50 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 
+// const ELEMENT_DATA2: PeriodicElement2[] = [
+
+//   {
+//     projectName: 'Angular App',
+//     employeesTeam: 'photos',
+//     teamLeader: 'Romit',
+//     priority: 'High',
+//     openTask: '19',
+//     complatedTask: '10',
+//     status: 40,
+//     document: 'xyz',
+//     action: 'abc'
+//   },
+//   {
+//     projectName: 'Angular App',
+//     employeesTeam: 'photos',
+//     teamLeader: 'Romit',
+//     priority: 'High',
+//     openTask: '19',
+//     complatedTask: '10',
+//     status: 40,
+//     document: 'xyz',
+//     action: 'abc'
+//   }
+// ];
+
+
 @Component({
   selector: 'app-dashbord1',
   templateUrl: './dashbord1.component.html',
   styleUrls: ['./dashbord1.component.css']
 })
+
 export class Dashbord1Component implements OnInit {
 
   constructor(private AllAPIChartService: AllAPIChartService) { }
+
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'total'];
   dataSource = ELEMENT_DATA;
+
+
+  // main table
+  // displayedColumns2: string[] = ['projectName', 'employeesTeam', 'teamLeader', 'priority', 'openTask', 'complatedtask', 'status', 'document', 'action'];
+  // dataSource2 = ELEMENT_DATA2;
 
 
   public chart: any;
@@ -177,6 +225,7 @@ export class Dashbord1Component implements OnInit {
   clientSurvayChart() {
 
   }
+
 
 
 }
