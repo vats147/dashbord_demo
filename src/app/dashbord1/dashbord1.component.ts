@@ -108,7 +108,6 @@ export class Dashbord1Component implements OnInit {
 
 
 
-
   public chart: any;
   allData: any = [];
   aPrice: any = [];
@@ -124,10 +123,6 @@ export class Dashbord1Component implements OnInit {
     this.AllAPIChartService.carts().subscribe((data) => {
       this.allData = data;
       if (this.allData != null) {
-        // this.allData.map((a: any) => {
-        //   this.aPrice.Push(a.price);
-        // })
-
         for (let i = 0; i < this.allData.length; i++) {
           this.aPrice.push(this.allData[i].price)
         }
@@ -135,6 +130,9 @@ export class Dashbord1Component implements OnInit {
     })
 
     this.renderData(this.aPrice)
+    this.chart2(this.aPrice)
+    this.chart3(this.aPrice)
+    this.chart4(this.aPrice)
   }
 
 
@@ -177,6 +175,114 @@ export class Dashbord1Component implements OnInit {
     });
   }
 
+  // chart 2
+  chart2(aPrice: any) {
+    console.log(this.aPrice)
+    this.chart = new Chart("myChart2", {
+      type: 'line', //this denotes tha type of chart
+
+      data: {// values on X-Axis
+        labels: ['January',
+          'February',
+          'March',
+          'April'],
+        datasets: [
+          {
+            label: "Price",
+            data: aPrice,
+            backgroundColor: 'blue'
+          },
+          {
+            label: "Profit",
+            data: aPrice,
+            backgroundColor: 'limegreen'
+          }
+        ]
+      },
+      options: {
+        aspectRatio: 4
+      }
+
+    });
+  }
+
+  // chart 3
+  chart3(aPrice: any) {
+    console.log(this.aPrice)
+    this.chart = new Chart("myChart3", {
+      type: 'line', //this denotes tha type of chart
+
+      data: {// values on X-Axis
+        labels: ['January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+          'July',
+          'August',
+          'September',
+          'October',
+          'November',
+          'December'],
+        datasets: [
+          {
+            label: "Price",
+            data: aPrice,
+            backgroundColor: 'blue'
+          },
+          {
+            label: "Profit",
+            data: aPrice,
+            backgroundColor: 'limegreen'
+          }
+        ]
+      },
+      options: {
+        aspectRatio: 4
+      }
+
+    });
+  }
+
+  // chart 4
+  chart4(aPrice: any) {
+    console.log(this.aPrice)
+    this.chart = new Chart("myChart4", {
+      type: 'line', //this denotes tha type of chart
+
+      data: {// values on X-Axis
+        labels: ['January',
+          'February',
+          'March',
+          'April',
+          'May',
+          'June',
+          'July',
+          'August',
+          'September',
+          'October',
+          'November',
+          'December'],
+        datasets: [
+          {
+            label: "Price",
+            data: aPrice,
+            backgroundColor: 'blue'
+          },
+          {
+            label: "Profit",
+            data: aPrice,
+            backgroundColor: 'limegreen'
+          }
+        ]
+      },
+      options: {
+        aspectRatio: 4
+      }
+
+    });
+  }
 
   //chartjs
   renderSecondChart() {
