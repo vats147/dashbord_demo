@@ -262,7 +262,7 @@
           </div>
           <div class="bill-chart">
             <div class="bill-chart-style">
-              <canvas id="secondChart">
+              <canvas id="myChart2">
               </canvas>
             </div>
           </div>
@@ -327,147 +327,15 @@
         <h4>Project Status</h4>
       </div>
       <div class="project-body-main" id="myDiv">
-        <div class="project-body">
+        <div class="project-body" *ngFor="let statusValue of status">
           <div class="project-status">
             <div class="status">
-              <p>Angular App</p>
+              <p>{{statusValue.project_name}}</p>
             </div>
           </div>
           <div class="project-progressbar">
             <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>Java developer</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>React Js</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>DevOps</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>PHP Developer</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>Node Js</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>Android</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>Node Js</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>Node Js</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>Node Js</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>Mongos</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
-            </div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-status">
-            <div class="status">
-              <p>Android Native</p>
-            </div>
-          </div>
-          <div class="project-progressbar">
-            <div>
-              <mat-progress-bar mode="determinate" value="40" color="Purple"></mat-progress-bar>
+              <mat-progress-bar mode="determinate" value="{{statusValue.progress}}" color="Purple"></mat-progress-bar>
             </div>
           </div>
         </div>
@@ -635,7 +503,7 @@
       </div>
       <div class="client-chart-main">
         <div class="client-chart">
-          <canvas id="clientSurvayChart">
+          <canvas id="myChart3">
           </canvas>
         </div>
       </div>
@@ -650,7 +518,8 @@
         </div>
       </div>
       <div class="suport-ticket-chart">
-
+        <canvas id="myChart4">
+        </canvas>
       </div>
     </div>
   </div>

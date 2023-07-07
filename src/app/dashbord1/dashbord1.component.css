@@ -532,21 +532,24 @@ table {
   visibility: visible;
 }
 
+.project-status {
+  margin-bottom: 1rem;
+}
 
 .project-progressbar {
-  width: 17rem;
+  width: 100%;
 }
 
 .project-body {
-  padding: 1rem;
+  padding: 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   box-sizing: 0.4rem 0.4rem 0.8rem #0000001a;
-
+  align-content: flex-start;
 }
+
 
 .mdc-linear-progress__bar-inner {
   color: #198754;
@@ -839,4 +842,11 @@ table {
 
 .delete-icon {
   color: #f96332;
+}
+
+
+/* sidebar */
+.sidenav-main {
+  position: fixed;
+  height: 100%;
 }

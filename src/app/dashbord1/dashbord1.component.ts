@@ -183,8 +183,14 @@ export class Dashbord1Component implements OnInit {
 
   }
 
-  // drag and drop
 
+  // project status
+  status = [{ "project_name": "Angular App", "progress": 78 }, { "project_name": "E-commerce App", "progress": 50 }, { "project_name": "Mobile Game", "progress": 66 }, { "project_name": "Social Media Platform", "progress": 99 }, { "project_name": "Data Analysis Tool", "progress": 85 }, { "project_name": "Messaging App", "progress": 54 }, { "project_name": "Fitness Tracker", "progress": 48 }, { "project_name": "Travel Planner", "progress": 100 }, { "project_name": "Inventory Management System", "progress": 58 }, { "project_name": "Education Platform", "progress": 20 }]
+
+
+
+
+  // drag and drop
   movies = [
     {
       title: 'Submit Science Homework',
@@ -247,7 +253,5 @@ export class Dashbord1Component implements OnInit {
   clientSurvayChart() {
 
   }
-
-
 
 }
