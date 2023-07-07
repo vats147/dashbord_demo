@@ -377,7 +377,7 @@ ul {
 }
 
 .bill-chart-style {
-  height: 380px;
+  /* height: 380px; */
 }
 
 .invoice {
@@ -552,8 +552,8 @@ table {
 
 
 .mdc-linear-progress__bar-inner {
-  color: #198754;
-  border-color: #4caf50;
+
+  border-color: #18f020;
 }
 
 /* todo */
@@ -727,7 +727,6 @@ table {
 
 .client-survay {
   width: 50%;
-  height: 330px;
   background-color: #fff;
   padding: .5rem 1rem 1rem 1rem;
   border-radius: 10px;
@@ -849,4 +848,119 @@ table {
 .sidenav-main {
   position: fixed;
   height: 100%;
+}
+
+/* responsive all cod */
+@media (max-width: 1028px) {
+
+  .cards {}
+
+  .box {
+    width: 100%;
+    margin-top: 2em;
+    flex-wrap: wrap;
+  }
+
+  .hy-icon {}
+
+  /* row3 */
+  .row3 {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .earning-chart {
+    width: 100%;
+  }
+
+  .chart-body {
+    padding-left: 2rem;
+  }
+
+  #myChart {
+    width: 100%;
+    height: 100%;
+  }
+
+  .transaction {
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  /* row 4 */
+
+  .row4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bill {
+    width: 100%;
+  }
+
+  .invoice {
+    margin-left: 0rem;
+    margin-top: 2rem;
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .card-invoice {
+    margin-left: 0rem;
+  }
+
+
+  /* row 5 */
+
+  .row5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row4-card1 {
+    width: 100%;
+    margin-right: 0rem;
+
+  }
+
+  .row4-card2 {
+    width: 100%;
+    margin-right: 0rem;
+  }
+
+  .row4-card3 {
+    width: 100%;
+  }
+
+  /* row 6 */
+
+  .row6 {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .client-survay {
+    width: 91%;
+  }
+
+  .suport-ticket-survay {
+    width: 100%;
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+
+  .card-invoice-body {
+    overflow: scroll;
+  }
+
+  /* row 7 */
+  .main-table-body {
+    overflow: scroll;
+  }
 }

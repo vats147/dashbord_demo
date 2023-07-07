@@ -118,6 +118,8 @@ export class Dashbord1Component implements OnInit {
     // this.clientSurvayChart();
   }
 
+ 
+
   //product api call
   private fetchCart() {
     this.AllAPIChartService.carts().subscribe((data) => {

@@ -21,6 +21,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CdkDragDrop, CdkDropList, CdkDrag, moveItemInArray } from '@angular/cdk/drag-drop';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {Component, ViewChild} from '@angular/core';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import {MatMenuTrigger} from '@angular/material/menu';
 
 
 
@@ -48,7 +51,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     CdkDropList,
     CdkDrag,
     MatCheckboxModule,
-    MatTooltipModule
+    MatTooltipModule,
+    
 
   ],
   providers: [AllAPIChartService],
