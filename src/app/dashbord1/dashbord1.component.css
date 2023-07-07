@@ -10,9 +10,16 @@ p {
   font-weight: 500;
 }
 
-.main-header{
+.main-header {
+
   padding: 1.5rem;
 }
+
+.breadcrumb-main {
+  margin-top: 3rem;
+}
+
+.breadcrumb-main li {}
 
 .box-link {
   display: flex;
@@ -23,6 +30,7 @@ p {
   align-content: flex-end;
   justify-content: space-between;
   padding-bottom: 1rem;
+  align-items: center;
 }
 
 .page-title {
@@ -41,6 +49,10 @@ p {
 .box-one li {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .box-one ul {
@@ -86,7 +98,7 @@ p {
   padding: 0.8rem;
   border-radius: 9px;
   position: absolute;
-  top: 190px;
+  top: 172px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,7 +162,7 @@ p {
 .earn-title {
   margin: 0;
   color: #5b626b;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 28px;
   padding-right: 10px;
   font-weight: 500;
@@ -219,7 +231,7 @@ p {
 .header-transaction h2 {
   margin: 0;
   color: #5b626b;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 28px;
   padding: 1rem;
   font-weight: 500;
@@ -326,6 +338,7 @@ ul {
   display: flex;
   flex-direction: wrap;
   margin-top: 2rem;
+
 }
 
 .bill {
@@ -394,7 +407,7 @@ ul {
 
   color: #5b626b;
   font-weight: 500;
-  font-size: .5rem;
+  font-size: 1rem;
 }
 
 
@@ -484,7 +497,7 @@ table {
 }
 
 .row4-card3 {
-  width: 31%;
+  width: 31.5%;
   margin-top: 1.9rem;
   background-color: #ffff;
   border-radius: 10px;
@@ -798,4 +811,32 @@ table {
 
 .mdc-data-table__cell {
   font-size: 14px;
+}
+
+.badgeHigh {
+  color: #198754;
+  border: 1px solid;
+  padding: .4rem;
+  border-radius: 12px;
+}
+
+.badgeunLow {
+  color: rgb(230, 2, 2);
+  border: 1px solid;
+  padding: .4rem;
+  border-radius: 12px;
+}
+
+
+.pdf-icon {
+  color: #f96332;
+}
+
+.touch-icon {
+  color: #185dc5;
+  padding-right: 1rem;
+}
+
+.delete-icon {
+  color: #f96332;
 }

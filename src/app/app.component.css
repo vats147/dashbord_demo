@@ -1,3 +1,13 @@
 .header {
   /* padding: 1.5rem; */
+
+  background-color: #f0eff3;
+}
+
+.app-header {
+  width: 100%;
+  position: fixed;
+  background-color: f0eff3;
+  color: #f0eff3;
+  z-index: 1;
 }

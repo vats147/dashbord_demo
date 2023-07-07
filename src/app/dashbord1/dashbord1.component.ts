@@ -26,22 +26,44 @@ export interface mainTable {
 
 const AELEMENT_DATA: mainTable[] = [
   {
-    projectName: "Project X",
+    projectName: "Angular App",
     employeesTeam: "Romit",
     teamLeader: "Sarah Williams",
     priority: "High",
-    openTask: 5,
+    openTask: 21,
     completedTask: 3,
     status: 50,
     document: "projectx_document.docx",
     action: "Review and finalize"
   },
   {
-    projectName: "Project X",
+    projectName: "Reactjs App",
     employeesTeam: "Romit",
-    teamLeader: "Sarah Williams",
+    teamLeader: "lio Williams",
     priority: "High",
-    openTask: 5,
+    openTask: 45,
+    completedTask: 3,
+    status: 80,
+    document: "projectx_document.docx",
+    action: "Review and finalize"
+  },
+  {
+    projectName: "Android App",
+    employeesTeam: "ABC",
+    teamLeader: "lio same",
+    priority: "Low",
+    openTask: 15,
+    completedTask: 3,
+    status: 80,
+    document: "projectx_document.docx",
+    action: "Review and finalize"
+  },
+  {
+    projectName: "IOT",
+    employeesTeam: "XYZ",
+    teamLeader: "om joi",
+    priority: "Low",
+    openTask: 15,
     completedTask: 3,
     status: 80,
     document: "projectx_document.docx",

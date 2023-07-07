@@ -668,7 +668,7 @@
       </div>
       <div class="main-table-body">
 
-     <table mat-table [dataSource]="AdataSource" class="mat-elevation-z8">
+        <table mat-table [dataSource]="AdataSource" class="mat-elevation-z8">
 
           <ng-container matColumnDef="projectName">
             <th mat-header-cell *matHeaderCellDef> projectName</th>
@@ -678,7 +678,8 @@
 
           <ng-container matColumnDef="employeesTeam">
             <th mat-header-cell *matHeaderCellDef> employeesTeam </th>
-            <td mat-cell *matCellDef="let element"> {{element.employeesTeam}} </td>
+            <td mat-cell *matCellDef="let element">
+              {{element.employeesTeam}} </td>
           </ng-container>
 
 
@@ -690,7 +691,10 @@
 
           <ng-container matColumnDef="priority">
             <th mat-header-cell *matHeaderCellDef> priority </th>
-            <td mat-cell *matCellDef="let element"> {{element.priority}} </td>
+            <td mat-cell *matCellDef="let element">
+              <span [ngClass]="element.priority=='High' ? 'badgeHigh' : 'badgeunLow'">{{element.priority}}</span>
+
+            </td>
           </ng-container>
 
           <ng-container matColumnDef="openTask">
@@ -703,15 +707,22 @@
           </ng-container>
           <ng-container matColumnDef="status">
             <th mat-header-cell *matHeaderCellDef> status </th>
-            <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+            <td mat-cell *matCellDef="let element">
+              <mat-progress-bar mode="determinate" value="{{element.status}}"></mat-progress-bar>
+            </td>
           </ng-container>
           <ng-container matColumnDef="document">
             <th mat-header-cell *matHeaderCellDef> document </th>
-            <td mat-cell *matCellDef="let element"> {{element.document}} </td>
+            <td mat-cell *matCellDef="let element">
+              <mat-icon class="pdf-icon">picture_as_pdf</mat-icon>
+            </td>
           </ng-container>
           <ng-container matColumnDef="action">
             <th mat-header-cell *matHeaderCellDef> action </th>
-            <td mat-cell *matCellDef="let element"> {{element.action}} </td>
+            <td mat-cell *matCellDef="let element" class="touch-delete">
+              <mat-icon class="touch-icon">touch_app</mat-icon>
+              <mat-icon class="delete-icon">delete_outline</mat-icon>
+            </td>
           </ng-container>
 
 
