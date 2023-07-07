@@ -12,19 +12,43 @@ export interface PeriodicElement {
   total: number;
 }
 
+export interface mainTable {
+  projectName: string;
+  employeesTeam: string;
+  teamLeader: string;
+  priority: string;
+  openTask: number;
+  completedTask: number;
+  status: number;
+  document: string;
+  action: string;
+}
 
-// export interface PeriodicElement2 {
-//   projectName: string,
-//   employeesTeam: string,
-//   teamLeader: string,
-//   priority: string,
-//   openTask: string,
-//   complatedTask: string,
-//   status: number,
-//   document: string,
-//   action: string
+const AELEMENT_DATA: mainTable[] = [
+  {
+    projectName: "Project X",
+    employeesTeam: "Romit",
+    teamLeader: "Sarah Williams",
+    priority: "High",
+    openTask: 5,
+    completedTask: 3,
+    status: 50,
+    document: "projectx_document.docx",
+    action: "Review and finalize"
+  },
+  {
+    projectName: "Project X",
+    employeesTeam: "Romit",
+    teamLeader: "Sarah Williams",
+    priority: "High",
+    openTask: 5,
+    completedTask: 3,
+    status: 80,
+    document: "projectx_document.docx",
+    action: "Review and finalize"
+  },
+];
 
-// }
 
 
 const ELEMENT_DATA: PeriodicElement[] = [
@@ -41,31 +65,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 
-// const ELEMENT_DATA2: PeriodicElement2[] = [
 
-//   {
-//     projectName: 'Angular App',
-//     employeesTeam: 'photos',
-//     teamLeader: 'Romit',
-//     priority: 'High',
-//     openTask: '19',
-//     complatedTask: '10',
-//     status: 40,
-//     document: 'xyz',
-//     action: 'abc'
-//   },
-//   {
-//     projectName: 'Angular App',
-//     employeesTeam: 'photos',
-//     teamLeader: 'Romit',
-//     priority: 'High',
-//     openTask: '19',
-//     complatedTask: '10',
-//     status: 40,
-//     document: 'xyz',
-//     action: 'abc'
-//   }
-// ];
 
 
 @Component({
@@ -81,10 +81,10 @@ export class Dashbord1Component implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'total'];
   dataSource = ELEMENT_DATA;
 
+  AdisplayedColumns: string[] = ['projectName', 'employeesTeam', 'teamLeader', 'priority', 'openTask', 'completedTask', 'status', 'document', 'action'];
+  AdataSource = AELEMENT_DATA;
 
-  // main table
-  // displayedColumns2: string[] = ['projectName', 'employeesTeam', 'teamLeader', 'priority', 'openTask', 'complatedtask', 'status', 'document', 'action'];
-  // dataSource2 = ELEMENT_DATA2;
+
 
 
   public chart: any;

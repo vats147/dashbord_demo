@@ -10,6 +10,9 @@ p {
   font-weight: 500;
 }
 
+.main-header{
+  padding: 1.5rem;
+}
 
 .box-link {
   display: flex;
@@ -391,7 +394,7 @@ ul {
 
   color: #5b626b;
   font-weight: 500;
-  font-size: 1.rem;
+  font-size: .5rem;
 }
 
 
@@ -785,6 +788,14 @@ table {
   font-weight: 500;
 }
 
-.main-table-body {
+.main-table-body {}
 
+.mdc-data-table__header-cell {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.mdc-data-table__cell {
+  font-size: 14px;
 }
