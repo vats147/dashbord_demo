@@ -98,15 +98,16 @@ p {
   padding: 0.8rem;
   border-radius: 9px;
   position: absolute;
-  top: 172px;
+  /* top: 172px; */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 35px;
+  transform: translate(10px, -28px);
 }
 
 .box:hover .hy-icon {
-  top: 180px;
+  transform: translate(10px, -40px);
   background-color: rgb(27, 18, 18);
 }
 
@@ -857,7 +858,7 @@ table {
 
   .box {
     width: 100%;
-    margin-top: 2em;
+    margin-top: 2.7em;
     flex-wrap: wrap;
   }
 
