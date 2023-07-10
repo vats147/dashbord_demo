@@ -11,6 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'calender',
+    component: CalenderComponent,
     loadChildren: () => import('./calender/calender.component').then(m => m.CalenderComponent)
   },
 
