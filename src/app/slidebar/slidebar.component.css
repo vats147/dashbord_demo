@@ -1,0 +1,80 @@
+.header {
+  /* padding: 1.5rem; */
+  width: 100%;
+  background-color: #f0eff3;
+}
+
+.menu-class {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hyMyDiv {
+  padding: .5rem;
+  height: 100%;
+  /* overflow: scroll; */
+}
+
+.myMenu {
+  width: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  transition: width 1s;
+}
+
+.nav-logo {
+  display: flex;
+}
+
+.nav-logo img {
+  width: 27px;
+  height: 38px;
+}
+
+
+.all-component-link {}
+
+
+
+.slidebar ul {
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.slidebar li {
+  padding-left: 0rem;
+  padding-right: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+
+}
+
+.icon-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-one {
+  display: flex;
+  align-items: center;
+
+}
+
+.icon-one mat-icon {
+  padding-right: .8rem;
+}
+
+.myMenu:hover {
+  width: 14rem;
+
+}
+
+@media (max-width:1080px) {
+  .hyMyDiv {
+    display: none;
+  }
+}

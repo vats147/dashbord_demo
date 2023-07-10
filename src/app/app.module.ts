@@ -24,6 +24,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import {Component, ViewChild} from '@angular/core';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import {MatMenuTrigger} from '@angular/material/menu';
+import { AppRoutingModule } from './app-routing.module';
+import { CalenderComponent } from './calender/calender.component';
 
 
 
@@ -33,6 +35,7 @@ import {MatMenuTrigger} from '@angular/material/menu';
     HeaderComponent,
     SlidebarComponent,
     Dashbord1Component,
+    CalenderComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,7 @@ import {MatMenuTrigger} from '@angular/material/menu';
     CdkDrag,
     MatCheckboxModule,
     MatTooltipModule,
+    AppRoutingModule,
     
 
   ],
