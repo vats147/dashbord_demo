@@ -26,17 +26,27 @@
 
 .nav-logo {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav-logo img {
   width: 27px;
   height: 38px;
+  padding-right: 1rem;
+}
+
+.nav-logo h4 {
+  padding-right: 1rem;
 }
 
 
 .all-component-link {}
 
 
+.myUlClass {
+  width: 14rem;
+}
 
 .slidebar ul {
   padding: 0rem;
@@ -74,8 +84,22 @@
 
 }
 
+
+
+.romit {
+  width: 14rem;
+
+}
+
 @media (max-width:1080px) {
   .hyMyDiv {
     display: none;
   }
+}
+
+
+
+/* Radio btn */
+.mat-mdc-radio-button~.mat-mdc-radio-button {
+  margin-left: 16px;
 }

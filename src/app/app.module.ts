@@ -21,13 +21,14 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CdkDragDrop, CdkDropList, CdkDrag, moveItemInArray } from '@angular/cdk/drag-drop';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import {Component, ViewChild} from '@angular/core';
-import {MatDialog, MatDialogModule} from '@angular/material/dialog';
-import {MatMenuTrigger} from '@angular/material/menu';
+import { Component, ViewChild } from '@angular/core';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatMenuTrigger } from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 import { CalenderComponent } from './calender/calender.component';
-
-
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,9 @@ import { CalenderComponent } from './calender/calender.component';
     MatCheckboxModule,
     MatTooltipModule,
     AppRoutingModule,
-    
+    MatRadioModule,
+    MatSlideToggleModule,
+    FormsModule
 
   ],
   providers: [AllAPIChartService],

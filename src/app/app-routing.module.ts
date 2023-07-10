@@ -6,8 +6,15 @@ import { Dashbord1Component } from './dashbord1/dashbord1.component';
 
 const routes: Routes = [
 
-  { path: '', component: Dashbord1Component },
-  { path: 'calender', component: CalenderComponent }
+  {
+    path: '', component: Dashbord1Component
+  },
+  {
+    path: 'calender',
+    loadChildren: () => import('./calender/calender.component').then(m => m.CalenderComponent)
+  },
+
+
 ];
 
 @NgModule({

@@ -9,5 +9,9 @@ import { Component } from '@angular/core';
 
 })
 export class SlidebarComponent {
-  showFiller = false;
+
+
+  isChecked = false;
+
+
 }
