@@ -28,7 +28,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { CalenderComponent } from './calender/calender.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
+import { MatInputModule } from '@angular/material/input';
+
+
 
 @NgModule({
   declarations: [
@@ -37,6 +41,7 @@ import { FormsModule } from '@angular/forms';
     SlidebarComponent,
     Dashbord1Component,
     CalenderComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MatRadioModule,
     MatSlideToggleModule,
-    FormsModule
+    FormsModule,
+    MatInputModule,
+    ReactiveFormsModule
 
   ],
   providers: [AllAPIChartService],

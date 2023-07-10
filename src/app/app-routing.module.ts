@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CalenderComponent } from './calender/calender.component';
 import { Dashbord1Component } from './dashbord1/dashbord1.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
 
@@ -12,8 +13,11 @@ const routes: Routes = [
   {
     path: 'calender',
     component: CalenderComponent,
-    loadChildren: () => import('./calender/calender.component').then(m => m.CalenderComponent)
   },
+  {
+    path: 'auth',
+    component: AuthComponent
+  }
 
 
 ];
