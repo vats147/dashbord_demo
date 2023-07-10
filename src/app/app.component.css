@@ -72,3 +72,9 @@
   width: 14rem;
 
 }
+
+@media (max-width:1080px) {
+  .hyMyDiv {
+    display: none;
+  }
+}
