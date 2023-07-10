@@ -351,8 +351,8 @@
       <div class="todo-main">
         <div class="todo">
           <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-            <div class="example-box" *ngFor="let item of movies">
-              <div class="todo-drag" cdkDrag>
+            <div class="example-box" *ngFor="let item of movies" cdkDrag>
+              <div class="todo-drag">
                 <mat-icon>drag_indicator</mat-icon>
               </div>
               <div class="todo-chek">
