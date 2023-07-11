@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AllAPIChartService } from './../service/all-apichart.service';
 import { Chart, ChartItem, registerables } from 'chart.js/auto';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
@@ -88,15 +88,13 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 
 
-
-
 @Component({
   selector: 'app-dashbord1',
   templateUrl: './dashbord1.component.html',
   styleUrls: ['./dashbord1.component.css']
 })
 
-export class Dashbord1Component implements OnInit {
+export class Dashbord1Component implements OnInit, AfterViewInit {
 
   constructor(private AllAPIChartService: AllAPIChartService) { }
 
@@ -111,38 +109,50 @@ export class Dashbord1Component implements OnInit {
   public chart: any;
   allData: any = [];
   aPrice: any = [];
+  aSecondPrice: any = [];
 
   ngOnInit(): void {
     this.fetchCart()
-    // this.renderData(this.aPrice);
-    // this.clientSurvayChart();
+    this.renderData(this.aPrice, this.aSecondPrice)
+    this.chart2(this.aPrice, this.aSecondPrice)
+    this.chart3(this.aPrice, this.aSecondPrice)
+    this.chart4(this.aPrice, this.aSecondPrice)
   }
 
- 
+  ngAfterViewInit(): void {
+    // this.renderData(this.aPrice, this.aSecondPrice)
+    // this.chart2(this.aPrice, this.aSecondPrice)
+    // this.chart3(this.aPrice, this.aSecondPrice)
+    // this.chart4(this.aPrice, this.aSecondPrice)
+    // console.log("This is all Data" + this.allData)
+  }
 
-  //product api call
+
+  //product  api call
   private fetchCart() {
     this.AllAPIChartService.carts().subscribe((data) => {
       this.allData = data;
       if (this.allData != null) {
         for (let i = 0; i < this.allData.length; i++) {
-          this.aPrice.push(this.allData[i].price)
+          let romit: any = this.allData[i].price + 45;
+          this.aPrice.push(romit)
+        }
+
+        for (let i = 5; i < this.allData.length; i++) {
+          this.aSecondPrice.push(this.allData[i].price * .5)
         }
       }
-    })
 
-    this.renderData(this.aPrice)
-    this.chart2(this.aPrice)
-    this.chart3(this.aPrice)
-    this.chart4(this.aPrice)
+    })
   }
 
 
   // chartJS
-  renderData(aPrice: any) {
+  renderData(aPrice: any, aSecondPrice: any) {
+
     console.log(this.aPrice)
     this.chart = new Chart("myChart", {
-      type: 'line', //this denotes tha type of chart
+      type: 'bar', //this denotes tha type of chart
 
       data: {// values on X-Axis
         labels: ['January',
@@ -161,27 +171,27 @@ export class Dashbord1Component implements OnInit {
           {
             label: "Price",
             data: aPrice,
-            backgroundColor: 'blue'
+            backgroundColor: '#51ae65'
           },
           {
             label: "Profit",
-            data: aPrice,
-            backgroundColor: 'limegreen'
+            data: aSecondPrice,
+            backgroundColor: '#AE519A'
           }
         ]
       },
       options: {
-        aspectRatio: 4
+        aspectRatio: 3
       }
 
     });
   }
 
   // chart 2
-  chart2(aPrice: any) {
+  chart2(aPrice: any, aSecondPrice: any) {
     console.log(this.aPrice)
     this.chart = new Chart("myChart2", {
-      type: 'line', //this denotes tha type of chart
+      type: 'radar', //this denotes tha type of chart
 
       data: {// values on X-Axis
         labels: ['January',
@@ -196,23 +206,23 @@ export class Dashbord1Component implements OnInit {
           },
           {
             label: "Profit",
-            data: aPrice,
+            data: aSecondPrice,
             backgroundColor: 'limegreen'
           }
         ]
       },
       options: {
-        aspectRatio: 4
+        aspectRatio: 1
       }
 
     });
   }
 
   // chart 3
-  chart3(aPrice: any) {
+  chart3(aPrice: any, aSecondPrice: any) {
     console.log(this.aPrice)
     this.chart = new Chart("myChart3", {
-      type: 'line', //this denotes tha type of chart
+      type: 'bar', //this denotes tha type of chart
 
       data: {// values on X-Axis
         labels: ['January',
@@ -231,24 +241,24 @@ export class Dashbord1Component implements OnInit {
           {
             label: "Price",
             data: aPrice,
-            backgroundColor: 'blue'
+            backgroundColor: '#5C5CFF'
           },
           {
             label: "Profit",
-            data: aPrice,
-            backgroundColor: 'limegreen'
+            data: aSecondPrice,
+            backgroundColor: '#FFFF5C'
           }
         ]
       },
       options: {
-        aspectRatio: 4
+        aspectRatio: 3
       }
 
     });
   }
 
   // chart 4
-  chart4(aPrice: any) {
+  chart4(aPrice: any, aSecondPrice: any) {
     console.log(this.aPrice)
     this.chart = new Chart("myChart4", {
       type: 'line', //this denotes tha type of chart
@@ -274,21 +284,16 @@ export class Dashbord1Component implements OnInit {
           },
           {
             label: "Profit",
-            data: aPrice,
+            data: aSecondPrice,
             backgroundColor: 'limegreen'
           }
         ]
       },
       options: {
-        aspectRatio: 4
+        aspectRatio: 3
       }
 
     });
-  }
-
-  //chartjs
-  renderSecondChart() {
-
   }
 
 

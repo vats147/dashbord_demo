@@ -4,11 +4,12 @@
   background-color: #f0eff3;
 }
 
-.menu-class {
-  display: flex;
-  justify-content: space-between;
+.not-hover {
+  /* display: none; */
 }
 
+
+/*  */
 .hyMyDiv {
   padding: .5rem;
   height: 100%;
