@@ -5,6 +5,7 @@ import { GoogleAuthProvider } from 'firebase/auth';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService {
 
   constructor(public fireAuth: AngularFireAuth) { }
