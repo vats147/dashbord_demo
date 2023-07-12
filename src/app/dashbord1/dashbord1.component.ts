@@ -120,6 +120,7 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
     this.chart4(this.aPrice, this.aSecondPrice)
   }
 
+
   ngAfterViewInit(): void {
     // this.renderData(this.aPrice, this.aSecondPrice)
     // this.chart2(this.aPrice, this.aSecondPrice)
@@ -127,6 +128,82 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
     // this.chart4(this.aPrice, this.aSecondPrice)
     // console.log("This is all Data" + this.allData)
   }
+
+
+  // transaction
+  transaction_data = [
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'Net banking',
+      why_transferr: 'Pay Milk Bill',
+      balance: 9500
+    },
+    {
+      tranferr: 'Check',
+      why_transferr: 'Pay Fees',
+      balance: 25000
+    },
+    {
+      tranferr: 'UPI',
+      why_transferr: 'Collage Fees',
+      balance: 6666
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'UPI',
+      why_transferr: 'Tuition Fees',
+      balance: 2099
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    },
+    {
+      tranferr: 'Bank Transferr',
+      why_transferr: 'Send Money',
+      balance: 2099
+    }
+
+  ]
 
 
   //product  api call

@@ -1,8 +1,11 @@
 .spinner {
   z-index: 999;
   position: fixed;
-  right: 45rem;
-  bottom: 18rem;
+  left: 50%;
+  right: 40%;
+  top: 40%;
+  bottom: 50%;
+  margin-left: -4rem;
 }
 
 @media (max-width:1028px) {

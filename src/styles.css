@@ -14,3 +14,13 @@ body {
 .mat-toolbar-row {
   width: 89%;
 }
+
+::ng-deep {
+  .mat-mdc-menu-panel .mat-mdc-menu-panel {
+    width: 15rem;
+  }
+}
+
+.mat-mdc-menu-panel .mat-mdc-menu-panel {
+  width: 150rem;
+}

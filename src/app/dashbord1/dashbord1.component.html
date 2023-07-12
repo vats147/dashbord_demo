@@ -136,120 +136,21 @@
       <div class="body-transaction">
         <div class="transaction-add">
           <ul>
-            <li>
+            <li *ngFor="let item of transaction_data">
               <div class="box-icon">
                 <mat-icon class="material-icons-a">account_balance</mat-icon>
               </div>
               <div class="xyz">
                 <div class="a">
-                  <small>Bank Tranferr</small>
-                  <h4>Send Money</h4>
+                  <small>{{item.tranferr}}</small>
+                  <h4>{{item.why_transferr}}</h4>
                 </div>
                 <div class="b">
-                  <h4>100.65</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="box-icon">
-                <mat-icon class="material-icons-a">account_balance</mat-icon>
-              </div>
-              <div class="xyz">
-                <div class="a">
-                  <small>Bank Tranferr</small>
-                  <h4>Send Money</h4>
-                </div>
-                <div class="b">
-                  <h4>100.65</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="box-icon">
-                <mat-icon class="material-icons-a">account_balance</mat-icon>
-              </div>
-              <div class="xyz">
-                <div class="a">
-                  <small>Bank Tranferr</small>
-                  <h4>Send Money</h4>
-                </div>
-                <div class="b">
-                  <h4>100.65</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="box-icon">
-                <mat-icon class="material-icons-a">account_balance</mat-icon>
-              </div>
-              <div class="xyz">
-                <div class="a">
-                  <small>Bank Tranferr</small>
-                  <h4>Send Money</h4>
-                </div>
-                <div class="b">
-                  <h4>100.65</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="box-icon">
-                <mat-icon class="material-icons-a">account_balance</mat-icon>
-              </div>
-              <div class="xyz">
-                <div class="a">
-                  <small>Bank Tranferr</small>
-                  <h4>Send Money</h4>
-                </div>
-                <div class="b">
-                  <h4>100.65</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="box-icon">
-                <mat-icon class="material-icons-a">account_balance</mat-icon>
-              </div>
-              <div class="xyz">
-                <div class="a">
-                  <small>Bank Tranferr</small>
-                  <h4>Send Money</h4>
-                </div>
-                <div class="b">
-                  <h4>100.65</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="box-icon">
-                <mat-icon class="material-icons-a">account_balance</mat-icon>
-              </div>
-              <div class="xyz">
-                <div class="a">
-                  <small>Bank Tranferr</small>
-                  <h4>Send Money</h4>
-                </div>
-                <div class="b">
-                  <h4>100.65</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="box-icon">
-                <mat-icon class="material-icons-a">account_balance</mat-icon>
-              </div>
-              <div class="xyz">
-                <div class="a">
-                  <small>Bank Tranferr</small>
-                  <h4>Send Money</h4>
-                </div>
-                <div class="b">
-                  <h4>100.65</h4>
+                  <h4>${{item.balance}}</h4>
                 </div>
               </div>
             </li>
           </ul>
-
         </div>
       </div>
     </div>
