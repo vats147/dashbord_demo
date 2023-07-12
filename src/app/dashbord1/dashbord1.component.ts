@@ -305,6 +305,56 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
     },
   ]
 
+  // dashbord card data
+
+  card_data = [
+    {
+      card_logo: 'shopping_cart',
+      card_title: 'Total Sales',
+      card_total: 3786,
+      persontage: 15,
+      card_performace: 'Decrease',
+      card_background_color: '#6f42c1',
+      card_color: 'red',
+      card_trending: 'trending_down'
+    },
+    {
+      card_logo: 'people',
+      card_title: 'Customer',
+      card_total: 1021,
+      persontage: 25,
+      card_performace: 'Increase',
+      card_background_color: '#fd7e14',
+      card_color: '#008000',
+      card_trending: 'trending_up'
+    },
+    {
+      card_logo: 'local_activity',
+      card_title: 'Employee Activity',
+      card_total: 55000,
+      persontage: 9,
+      card_performace: 'Decrease',
+      card_background_color: '#4caf50',
+      card_color: 'red',
+      card_trending: 'trending_down'
+    },
+    {
+      card_logo: 'attach_money',
+      card_title: 'Total Profit',
+      card_total: 56999,
+      persontage: 1,
+      card_performace: 'Increase',
+      card_background_color: '#2196f3',
+      card_color: '	#008000',
+      card_trending: 'trending_up'
+    }
+  ]
+
+
+
+
+
+
   //product  api call
   private fetchCart() {
     this.AllAPIChartService.carts().subscribe((data) => {

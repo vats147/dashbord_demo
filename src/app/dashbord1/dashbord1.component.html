@@ -21,57 +21,17 @@
   </div>
   <div class="row">
     <div class="cards">
-      <div class="box">
+      <div class="box" *ngFor="let item of card_data">
         <div class="box-a">
           <div class="box-content">
-            <mat-icon class="hy-icon" style="background-color: #6f42c1;">shopping_cart</mat-icon>
-            <h3 class="hy-title">Total Sales</h3>
-            <h2 class="hy-title">258</h2>
+            <mat-icon class="hy-icon"
+              style='background-color: {{item.card_background_color}};'>{{item.card_logo}}</mat-icon>
+            <h3 class="hy-title">{{item.card_title}}</h3>
+            <h2 class="hy-title">{{item.card_total}}</h2>
             <div class="card-percentage">
-              <mat-icon style="color: red;">trending_down</mat-icon>
-              <p><span style="color: red;">10% </span> Decrease
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-a">
-          <div class="box-content">
-            <mat-icon class="hy-icon" style="background-color: #fd7e14;">people</mat-icon>
-            <h3 class="hy-title">Total Sales</h3>
-            <h2 class="hy-title">258</h2>
-            <div class="card-percentage">
-              <mat-icon style="color: rgb(32, 190, 0);  ">trending_up</mat-icon>
-              <p><span style="color: rgb(0, 165, 8);">10% </span> Decrease
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-a">
-          <div class="box-content">
-            <mat-icon class="hy-icon" style="background-color: #4caf50;">local_activity</mat-icon>
-            <h3 class="hy-title">Total Sales</h3>
-            <h2 class="hy-title">258</h2>
-            <div class="card-percentage">
-              <mat-icon style="color: red; ">trending_down</mat-icon>
-              <p><span style="color: red;">10% </span> Decrease
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-a">
-          <div class="box-content">
-            <mat-icon class="hy-icon" style="background-color: #2196f3;">attach_money</mat-icon>
-            <h3 class="hy-title">Total Sales</h3>
-            <h2 class="hy-title">258</h2>
-            <div class="card-percentage">
-              <mat-icon style="color: rgb(3, 163, 3); ">trending_up</mat-icon>
-              <p><span style="color: rgb(27, 163, 0);">10% </span> Decrease
+              <mat-icon style="color: {{item.card_color}};">{{item.card_trending}}</mat-icon>
+              <p><span style="color: {{item.card_color}};">{{item.persontage}}% </span>
+                {{item.card_performace}}
               </p>
             </div>
           </div>
@@ -286,13 +246,13 @@
         <h4>Document</h4>
       </div>
       <div class="document-body-main">
-        <div *ngFor="let document of document_Data" class="document-body">
+        <div *ngFor="let item of document_Data" class="document-body">
           <div class="document-logo">
             <mat-icon>picture_as_pdf</mat-icon>
           </div>
           <div class="document-details">
-            <h4>{{document.d_name}}</h4>
-            <p>{{document.d_size}}</p>
+            <h4>{{item.d_name}}</h4>
+            <p>{{item.d_size}}</p>
           </div>
           <div class="document-funtionality">
             <mat-icon>delete_forever</mat-icon>
