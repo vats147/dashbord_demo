@@ -39,7 +39,9 @@
 
 .all-component-link {}
 
-
+.slidebar{
+  cursor:pointer;
+}
 
 .slidebar ul {
   padding: 0rem;
