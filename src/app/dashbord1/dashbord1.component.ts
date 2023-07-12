@@ -205,6 +205,105 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
 
   ]
 
+  // Document
+  document_Data = [
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'School Document',
+      d_size: '.pdf 5.3 MB'
+    },
+    {
+      d_name: 'Python Code',
+      d_size: '.py 3.52 KB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Collage Document',
+      d_size: '.pdf 4.3 MB'
+    },
+    {
+      d_name: 'Company Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'SRS',
+      d_size: '.pdf 5 MB'
+    },
+    {
+      d_name: 'Laptop Bill',
+      d_size: '.pdf 1.1 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+    {
+      d_name: 'Aggrement Document',
+      d_size: '.doc 4.3 MB'
+    },
+  ]
 
   //product  api call
   private fetchCart() {

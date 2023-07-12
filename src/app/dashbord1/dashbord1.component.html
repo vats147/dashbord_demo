@@ -286,104 +286,13 @@
         <h4>Document</h4>
       </div>
       <div class="document-body-main">
-        <div class="document-body">
+        <div *ngFor="let document of document_Data" class="document-body">
           <div class="document-logo">
             <mat-icon>picture_as_pdf</mat-icon>
           </div>
           <div class="document-details">
-            <h4>Aggrement Docu</h4>
-            <p>.doc 4.3 MB</p>
-          </div>
-          <div class="document-funtionality">
-            <mat-icon>delete_forever</mat-icon>
-            <p><mat-icon>cloud_download</mat-icon></p>
-          </div>
-        </div>
-        <div class="document-body">
-          <div class="document-logo">
-            <mat-icon>picture_as_pdf</mat-icon>
-          </div>
-          <div class="document-details">
-            <h4>Aggrement Docu</h4>
-            <p>.doc 4.3 MB</p>
-          </div>
-          <div class="document-funtionality">
-            <mat-icon>delete_forever</mat-icon>
-            <p><mat-icon>cloud_download</mat-icon></p>
-          </div>
-        </div>
-        <div class="document-body">
-          <div class="document-logo">
-            <mat-icon>picture_as_pdf</mat-icon>
-          </div>
-          <div class="document-details">
-            <h4>Aggrement Docu</h4>
-            <p>.doc 4.3 MB</p>
-          </div>
-          <div class="document-funtionality">
-            <mat-icon>delete_forever</mat-icon>
-            <p><mat-icon>cloud_download</mat-icon></p>
-          </div>
-        </div>
-        <div class="document-body">
-          <div class="document-logo">
-            <mat-icon>picture_as_pdf</mat-icon>
-          </div>
-          <div class="document-details">
-            <h4>Aggrement Docu</h4>
-            <p>.doc 4.3 MB</p>
-          </div>
-          <div class="document-funtionality">
-            <mat-icon>delete_forever</mat-icon>
-            <p><mat-icon>cloud_download</mat-icon></p>
-          </div>
-        </div>
-        <div class="document-body">
-          <div class="document-logo">
-            <mat-icon>picture_as_pdf</mat-icon>
-          </div>
-          <div class="document-details">
-            <h4>Aggrement Docu</h4>
-            <p>.doc 4.3 MB</p>
-          </div>
-          <div class="document-funtionality">
-            <mat-icon>delete_forever</mat-icon>
-            <p><mat-icon>cloud_download</mat-icon></p>
-          </div>
-        </div>
-        <div class="document-body">
-          <div class="document-logo">
-            <mat-icon>picture_as_pdf</mat-icon>
-          </div>
-          <div class="document-details">
-            <h4>Aggrement Docu</h4>
-            <p>.doc 4.3 MB</p>
-          </div>
-          <div class="document-funtionality">
-            <mat-icon>delete_forever</mat-icon>
-            <p><mat-icon>cloud_download</mat-icon></p>
-          </div>
-        </div>
-        <div class="document-body">
-          <div class="document-logo">
-            <mat-icon>picture_as_pdf</mat-icon>
-          </div>
-          <div class="document-details">
-            <h4>Aggrement Docu</h4>
-            <p>.doc 4.3 MB</p>
-          </div>
-          <div class="document-funtionality">
-            <mat-icon>delete_forever</mat-icon>
-            <p><mat-icon>cloud_download</mat-icon></p>
-          </div>
-        </div>
-        <div class="document-body">
-          <div class="document-logo">
-            <mat-icon>picture_as_pdf</mat-icon>
-          </div>
-          <div class="document-details">
-            <h4>Aggrement Docu</h4>
-            <p>.doc 4.3 MB</p>
+            <h4>{{document.d_name}}</h4>
+            <p>{{document.d_size}}</p>
           </div>
           <div class="document-funtionality">
             <mat-icon>delete_forever</mat-icon>
