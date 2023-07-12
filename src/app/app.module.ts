@@ -19,7 +19,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { CdkDragDrop, CdkDropList, CdkDrag, moveItemInArray } from '@angular/cdk/drag-drop';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { AppRoutingModule } from './app-routing.module';
 import { CalenderComponent } from './calender/calender.component';
 import { MatRadioModule } from '@angular/material/radio';
@@ -31,6 +31,8 @@ import { AuthService } from './service/auth.service';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from './environment/environment';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { LoaderComponent } from './loader/loader.component';
+import { LoadingService } from './service/loading.service';
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     SlidebarComponent,
     Dashbord1Component,
     CalenderComponent,
-    AuthComponent
+    AuthComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -69,10 +72,11 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     MatSlideToggleModule,
     FormsModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatProgressSpinnerModule
 
   ],
-  providers: [AllAPIChartService, AuthService],
+  providers: [AllAPIChartService, AuthService, LoadingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

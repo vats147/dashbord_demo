@@ -1,0 +1,18 @@
+.spinner {
+  z-index: 999;
+  position: fixed;
+  right: 45rem;
+  bottom: 18rem;
+}
+
+@media (max-width:1028px) {
+  .spinner {
+    z-index: 999;
+    position: fixed;
+    left: 39%;
+    right: 50%;
+    top: 27%;
+    bottom: 50%;
+
+  }
+}

@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AllAPIChartService } from './../service/all-apichart.service';
 import { Chart, ChartItem, registerables } from 'chart.js/auto';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { LoadingService } from './../service/loading.service';
 
 
 export interface PeriodicElement {
@@ -96,7 +97,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 
 export class Dashbord1Component implements OnInit, AfterViewInit {
 
-  constructor(private AllAPIChartService: AllAPIChartService) { }
+  constructor(private AllAPIChartService: AllAPIChartService, public LoadingService: LoadingService) { }
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'total'];
   dataSource = ELEMENT_DATA;
@@ -132,6 +133,9 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
   private fetchCart() {
     this.AllAPIChartService.carts().subscribe((data) => {
       this.allData = data;
+
+      // this.LoadingService.setLoading(true);
+
       if (this.allData != null) {
         for (let i = 0; i < this.allData.length; i++) {
           let romit: any = this.allData[i].price + 45;

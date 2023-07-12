@@ -1,4 +1,8 @@
-<div class="menu-class">
+<div *ngIf="this.LoadingServiceA.getLoading()">
+  <app-loader></app-loader>
+</div>
+
+<div *ngIf="!this.LoadingServiceA.getLoading()" class="menu-class">
   <app-slidebar></app-slidebar>
   <app-header></app-header>
   <div class="header">
