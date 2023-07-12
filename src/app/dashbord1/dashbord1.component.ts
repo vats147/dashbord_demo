@@ -306,7 +306,6 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
   ]
 
   // dashbord card data
-
   card_data = [
     {
       card_logo: 'shopping_cart',
@@ -379,8 +378,8 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
 
   // chartJS
   renderData(aPrice: any, aSecondPrice: any) {
-
     console.log(this.aPrice)
+
     this.chart = new Chart("myChart", {
       type: 'bar', //this denotes tha type of chart
 
@@ -411,8 +410,21 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
         ]
       },
       options: {
-        aspectRatio: 3
+        aspectRatio: 3,
+
+        interaction: {
+          mode: 'x'
+        },
+        plugins: {
+          subtitle: {
+            display: true,
+            text: 'Price and Profit Chart'
+          }
+        },
+
+        
       }
+
 
     });
   }
@@ -591,10 +603,5 @@ export class Dashbord1Component implements OnInit, AfterViewInit {
     moveItemInArray(this.movies, event.previousIndex, event.currentIndex);
   }
 
-
-  // client survay chart
-  clientSurvayChart() {
-
-  }
 
 }
